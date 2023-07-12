@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/katrine9176/interactive-rating-component-Frontendmentor)
+- Live Site URL: [live site URL](https://katrine9176.github.io/interactive-rating-component-Frontendmentor/)
 
 ## My process
 
