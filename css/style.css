@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .window {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  width: 300px;
+  background-color: hsl(215, 21%, 16%);
+  border-radius: 15px;
+}
+.main .your-opinion__img {
+  margin: 0.5em 0;
+  padding: 1em;
+  width: 48px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: hsl(210, 19%, 18%);
+}
+.main .your-opinion__heading {
+  margin: 0.5em 0;
+  color: hsl(0, 0%, 100%);
+}
+.main .your-opinion__paragraph {
+  margin-bottom: 2em;
+  color: hsl(217, 12%, 63%);
+}
+.main .your-opinion__numbers {
+  display: flex;
+  margin-bottom: 2em;
+}
+.main .your-opinion__numbers-number {
+  font-family: "Overpass", sans-serif;
+  margin-right: 0.7em;
+  padding: 1em 1.4em;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(210, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  transition: all 0.3s;
+}
+.main .your-opinion__numbers-number:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.main .your-opinion__submit {
+  margin-bottom: 1em;
+  width: 255px;
+  height: 40px;
+  align-self: center;
+  font-family: "Overpass", sans-serif;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.main .your-opinion__submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.main .your-opinion .clicked {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.main .thanks-window {
+  display: none;
+}
+.main .thanks-window__img {
+  transform: scale(0.65);
+}
+.main .thanks-window__select {
+  padding: 0.5em;
+  width: 190px;
+  text-align: center;
+  align-self: center;
+  background-color: hsl(210, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 15px;
+}
+.main .thanks-window__heading {
+  margin: 0.7em;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.main .thanks-window__paragraph {
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 0.5em;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 1.1rem;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.btns {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 768px) {
+  .main .your-opinion,
+  .main .thanks-window {
+    width: 400px;
+    padding: 2em;
+  }
+  .main .your-opinion__numbers,
+  .main .thanks-window__numbers {
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */

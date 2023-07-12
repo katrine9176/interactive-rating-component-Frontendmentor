@@ -1,0 +1,161 @@
+@use 'colors' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $bg;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main {
+	.window {
+		display: flex;
+		flex-direction: column;
+		padding: 1em 1.5em;
+		width: 300px;
+		background-color: $card-bg;
+		border-radius: 15px;
+	}
+
+	.your-opinion {
+		&__img {
+			margin: 0.5em 0;
+			padding: 1em;
+			width: 48px;
+			height: 47px;
+			border-radius: 50%;
+			background-color: $star-bg;
+		}
+
+		&__heading {
+			margin: 0.5em 0;
+			color: $white;
+		}
+
+		&__paragraph {
+			margin-bottom: 2em;
+			color: $light-grey;
+		}
+
+		&__numbers {
+			display: flex;
+			margin-bottom: 2em;
+
+			&-number {
+				font-family: 'Overpass', sans-serif;
+				margin-right: 0.7em;
+				padding: 1em 1.4em;
+				border-radius: 50%;
+				border: none;
+				background-color: $star-bg;
+				color: $light-grey;
+				transition: all 0.3s;
+
+				&:hover {
+					background-color: $orange;
+					color: $white;
+					cursor: pointer;
+				}
+			}
+		}
+
+		&__submit {
+			margin-bottom: 1em;
+			width: 255px;
+			height: 40px;
+			align-self: center;
+			font-family: 'Overpass', sans-serif;
+			border: none;
+			border-radius: 20px;
+			background-color: $orange;
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: all 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $white;
+				color: $orange;
+			}
+		}
+
+		.clicked {
+			background-color: $white;
+			color: $orange;
+		}
+	}
+
+	.thanks-window {
+		display: none;
+
+		&__img {
+			transform: scale(0.65);
+		}
+
+		&__select {
+			padding: 0.5em;
+			width: 190px;
+			text-align: center;
+			align-self: center;
+			background-color: $star-bg;
+			color: $orange;
+			border-radius: 15px;
+		}
+
+		&__heading {
+			margin: 0.7em;
+			text-align: center;
+			color: $white;
+		}
+
+		&__paragraph {
+			text-align: center;
+			color: $light-grey;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.attribution {
+	margin-top: 2em;
+	font-size: 1.1rem;
+	color: $light-grey;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+		text-decoration: none;
+	}
+}
+
+.btns {
+	background-color: $orange;
+	color: $white;
+}
+
+@media (min-width: 768px) {
+	.main .your-opinion,
+	.main .thanks-window {
+		width: 400px;
+		padding: 2em;
+
+		&__numbers {
+			justify-content: space-between;
+		}
+	}
+}
